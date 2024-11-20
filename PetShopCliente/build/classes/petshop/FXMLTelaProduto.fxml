@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="516.0" prefWidth="1087.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pastajavafx.Controller.java.FXMLTelaprodutoController">
+   <children>
+      <SplitPane orientation="VERTICAL" prefHeight="625.0" prefWidth="1087.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="255.0" prefWidth="1036.0">
+               <children>
+                   <Text layoutX="329.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vendas De Produtos">
+         <font>
+            <Font name="Arial Black" size="32.0" />
+         </font>
+      </Text>
+                  <AnchorPane layoutX="25.0" layoutY="119.0" minHeight="0.0" minWidth="0.0" prefHeight="452.0" prefWidth="1035.0">
+                     <children>
+                        <Label layoutX="2.0" layoutY="-15.0" prefHeight="75.0" prefWidth="131.0" text="Cod :">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="303.0" layoutY="-4.0" prefHeight="53.0" prefWidth="172.0" text="Produto :">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="724.0" layoutY="5.0" prefHeight="35.0" prefWidth="149.0" text="Quantidade :">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="303.0" layoutY="60.0" prefHeight="35.0" prefWidth="118.0" text="Preço un :">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="campoQuantidade" layoutX="865.0" layoutY="-2.0" prefHeight="45.0" prefWidth="189.0" />
+                        <TextField fx:id="campoDesconto" layoutX="749.0" layoutY="55.0" prefHeight="45.0" prefWidth="125.0" />
+                        <TextField fx:id="campoPrecoUnitario" layoutX="410.0" layoutY="55.0" prefHeight="45.0" prefWidth="197.0" />
+                        <TextField fx:id="campoNome" layoutX="410.0" prefHeight="45.0" prefWidth="312.0" />
+                        <TextField fx:id="campoCodigo" layoutX="62.0" prefHeight="45.0" prefWidth="236.0" />
+                        <Label layoutX="3.0" layoutY="120.0" prefHeight="35.0" prefWidth="131.0" text="Vendedor:">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Botao_Adicionar" layoutY="230.0" mnemonicParsing="false" onAction="#handleAdicionar" prefHeight="45.0" prefWidth="125.0" text="Adicionar" />
+                        <Button fx:id="Botao_Salvar" layoutX="573.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleSalvar" prefHeight="45.0" prefWidth="125.0" text="Salvar" />
+                        <Button fx:id="Botao_Excluir" layoutX="284.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleExcluir" prefHeight="45.0" prefWidth="125.0" text="Excluir" />
+                        <Button fx:id="Botao_Cancelar" layoutX="428.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleCancelar" prefHeight="45.0" prefWidth="125.0" text="Cancelar" />
+                        <Button fx:id="Botao_Editar" layoutX="142.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleEditar" prefHeight="45.0" prefWidth="125.0" text="Editar" />
+                        <Button fx:id="Botao_Sair" layoutX="716.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleSair" prefHeight="45.0" prefWidth="125.0" text="Sair" />
+                        <TextField fx:id="campoValor" layoutX="73.0" layoutY="55.0" prefHeight="45.0" prefWidth="225.0" />
+                        <Label layoutX="-1.0" layoutY="60.0" prefHeight="35.0" prefWidth="100.0" text="Valor :">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="609.0" layoutY="60.0" prefHeight="35.0" prefWidth="138.0" text="Desconto: %">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="888.0" layoutY="60.0" prefHeight="35.0" prefWidth="52.0" text="R$">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="campoPreco" layoutX="928.0" layoutY="52.0" prefHeight="45.0" prefWidth="125.0" />
+                        <TextField fx:id="campoVendedor" layoutX="116.0" layoutY="111.0" prefHeight="45.0" prefWidth="181.0" />
+                        <Label layoutX="303.0" layoutY="118.0" prefHeight="35.0" prefWidth="131.0" text="Total :">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="campoTotal" layoutX="410.0" layoutY="111.0" prefHeight="45.0" prefWidth="197.0" />
+                        <Button fx:id="VoltarTela" layoutX="902.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleVoltar" prefHeight="45.0" prefWidth="77.0" text="Voltar tela" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
